@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="113.4" viewBox="0 0 350 113.4">
+  <g id="Component_27_1" data-name="Component 27 – 1" transform="translate(0 1.303)">
+    <g id="Group_152" data-name="Group 152" transform="translate(116.299)">
+      <g id="Group_148" data-name="Group 148" transform="translate(0 27.223)">
+        <g id="Group_147" data-name="Group 147">
+          <g id="Group_146" data-name="Group 146">
+            <path id="Path_125" data-name="Path 125" d="M1236.987,1312.9l-2.019-7.136a22.949,22.949,0,0,0-12.427-14.572l-5.009-2.323a11.2,11.2,0,0,1-6.063-7.106l-2.425-8.55.191-1.439a7.369,7.369,0,0,0-3.424-7.233l-.123-.076" transform="translate(-1183.431 -1249.257)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+            <path id="Path_126" data-name="Path 126" d="M1209.083,1301.936c-.358.049-.708.088-1.054.119a17.2,17.2,0,0,1-14.939-6.683c-7.327-9.384-12.906-3.525-12.906-3.525a119.966,119.966,0,0,1,10.165,14.406,21.722,21.722,0,0,0,13.416,10.411q.529.132,1.083.247a12.634,12.634,0,0,1,8.606,6.506" transform="translate(-1180.183 -1252.514)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+            <path id="Path_127" data-name="Path 127" d="M1186.087,1285.177l-2.495-11.4,7.327-22.492s4.2,1.053,3.119,7.47l-3.324,14.63,2.268,9.249" transform="translate(-1180.617 -1247.578)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+            <path id="Path_128" data-name="Path 128" d="M1195.023,1253.11l1.967-6.073s5.44,2,3.6,9.248l-3.047,15.885,2.431,8.594" transform="translate(-1182.073 -1247.037)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+            <path id="Path_129" data-name="Path 129" d="M1201.83,1253.975l.277.2a8.259,8.259,0,0,1,3.236,8.181l-1.762,9.408,2.514,8.751" transform="translate(-1182.94 -1247.921)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+          </g>
+          <path id="Path_130" data-name="Path 130" d="M1235.521,1334.927l-17.132,5.272-4.612-11.509,24.239-8.725v5.835" transform="translate(-1184.462 -1256.325)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <line id="Line_10" data-name="Line 10" y1="7.864" x2="22.246" transform="translate(31.309 69.476)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="Group_150" data-name="Group 150" transform="translate(63.135 27.223)">
+        <g id="Group_149" data-name="Group 149">
+          <path id="Path_131" data-name="Path 131" d="M1252.532,1312.9l2.018-7.136a22.951,22.951,0,0,1,12.427-14.572l5.009-2.323a11.2,11.2,0,0,0,6.063-7.106l2.425-8.55-.191-1.439a7.37,7.37,0,0,1,3.423-7.233l.123-.076" transform="translate(-1252.532 -1249.257)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+          <path id="Path_132" data-name="Path 132" d="M1280.149,1301.936q.536.073,1.054.119a17.2,17.2,0,0,0,14.939-6.683c7.327-9.384,12.906-3.525,12.906-3.525a120,120,0,0,0-10.165,14.406,21.721,21.721,0,0,1-13.416,10.411q-.529.132-1.083.247a12.634,12.634,0,0,0-8.606,6.506" transform="translate(-1255.492 -1252.514)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+          <path id="Path_133" data-name="Path 133" d="M1306.45,1285.177l2.495-11.4-7.327-22.492s-4.2,1.053-3.119,7.47l3.324,14.63-2.268,9.249" transform="translate(-1258.363 -1247.578)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+          <path id="Path_134" data-name="Path 134" d="M1298.2,1253.11l-1.967-6.073s-5.44,2-3.6,9.248l3.047,15.885-2.431,8.594" transform="translate(-1257.59 -1247.037)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+          <path id="Path_135" data-name="Path 135" d="M1291.635,1253.975l-.277.2a8.259,8.259,0,0,0-3.235,8.181l1.762,9.408-2.514,8.751" transform="translate(-1256.969 -1247.921)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+        </g>
+        <path id="Path_136" data-name="Path 136" d="M1255.028,1334.927l17.132,5.272,4.611-11.509-24.239-8.725v5.835" transform="translate(-1252.532 -1256.325)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Line_11" data-name="Line 11" x1="22.246" y1="7.864" transform="translate(0.001 69.476)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      </g>
+      <g id="Group_151" data-name="Group 151" transform="translate(25.54)">
+        <path id="Path_137" data-name="Path 137" d="M1252.683,1247.309v-.352a5.975,5.975,0,0,0-4.916-5.87v-1.577h-2.106v1.577a5.975,5.975,0,0,0-4.916,5.87,6.194,6.194,0,0,0,4.361,5.722c.363.134.731.256,1.1.376a15.664,15.664,0,0,1,1.875.7,3.947,3.947,0,0,1,2.495,3.551,3.862,3.862,0,0,1-7.724.078l-.007-.345h-2.1l0,.356a5.99,5.99,0,0,0,4.916,5.78v1.578h2.106v-1.578a5.92,5.92,0,0,0,3.555-9.61,6.934,6.934,0,0,0-3.264-2.078c-.293-.1-.592-.2-.893-.3a9.67,9.67,0,0,1-2.833-1.263,3.771,3.771,0,0,1-1.479-2.971,3.862,3.862,0,1,1,7.724,0v.352Z" transform="translate(-1213.435 -1218.855)" fill="#fff"/>
+        <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="25.547" cy="25.547" rx="25.547" ry="25.547" transform="translate(0 47.346) rotate(-67.918)" fill="none" stroke="#fff" stroke-width="2"/>
+        <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="19.362" cy="19.362" rx="19.362" ry="19.362" transform="translate(13.915 13.915)" fill="none" stroke="#fff" stroke-width="2"/>
+      </g>
+    </g>
+    <text id="The_lowest_stable_entry_fee_so_all_your_future_wolves_can_join_your_WOLFPACK_without_any_doubts." data-name="The lowest, stable entry fee, 
+so all your future wolves
+can join your WOLFPACK 
+without any doubts." transform="translate(0 12)" fill="#fff" font-size="20" font-family="BCSklonar-Bold, BC Sklonar" font-weight="700" opacity="0"><tspan x="15" y="20">The lowest, stable entry fee</tspan><tspan y="20" font-family="BCSklonar-Light, BC Sklonar" font-weight="300">, </tspan><tspan font-family="BCSklonar-Light, BC Sklonar" font-weight="300"><tspan x="37" y="45">so all your future wolves</tspan><tspan x="54" y="70">can join your WOLFPACK </tspan><tspan x="70" y="95">without any doubts.</tspan></tspan></text>
+  </g>
+</svg>

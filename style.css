@@ -1,0 +1,2367 @@
+@font-face {
+  font-family: kelson-Sans-light;
+  src: url(./fonts/Kelson\ Sans\ Light.otf);
+}
+@font-face {
+  font-family: kelson-Sans-Regular;
+  src: url(./fonts/Kelson\ Sans\ Regular.otf);
+}
+@font-face {
+  font-family: kelson-Sans-dark;
+  src: url(./fonts/Kelson\ Sans\ Bold.otf);
+}
+.yellow-gradient-text {
+  background: linear-gradient(180deg, #F6A91D 0%, #F13412 100%) 0% 0% no-repeat padding-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-gradient-text {
+  background: linear-gradient(180deg, #30AEF0 0%, #248DEC 100%) 0% 0% no-repeat padding-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations and Transitions */
+.transition {
+  transition: all 1s ease;
+}
+
+.hide-to-left {
+  transform: translateX(50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hide-to-right {
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hide-to-top {
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hide-to-bottom {
+  transform: translateY(50%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+* {
+  font-family: kelson-Sans-Regular;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.join-us-sec .join-us-sec-bg div .join-us-container .logo-container, .join-us-sec .join-us-sec-bg div, .about-sec .about-sec-bg .about-sec-contact, .invite-three-people-sec .invite-three-people-sec-bg div, .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1), .alpha-millionaire-sec .alpha-millionaire-sec-bg div, .services-sec .services-sec-bg .services-container, .history-sec .history-sec-bg, .who-we-are-sec .who-we-are-sec-bg, .discover-sec .discover-sec-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-us-sec .join-us-sec-bg div, .about-sec .about-sec-bg .about-sec-features div h3, .procedure-sec .procedure-sec-bg div div h3, .invite-three-people-sec .invite-three-people-sec-bg div, .alpha-millionaire-sec .alpha-millionaire-sec-bg div, .services-sec .services-sec-bg .services-container, .discover-sec {
+  max-width: 1520px;
+  margin: auto;
+}
+
+.services-sec .services-sec-bg::before {
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 80%, 0% 100%, 0% 100%, 0% 20%);
+          clip-path: polygon(100% 0%, 100% 0%, 100% 80%, 0% 100%, 0% 100%, 0% 20%);
+}
+
+.alpha-millionaire-sec .alpha-millionaire-sec-bg::before, .who-we-are-sec .who-we-are-sec-bg::before {
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 80%, 0% 100%, 0% 20%);
+          clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 80%, 0% 100%, 0% 20%);
+}
+
+.invite-teach-sec .invite-teach-sec-bg::before, .history-sec .history-sec-bg::before {
+  -webkit-clip-path: polygon(100% 20%, 100% 0%, 100% 80%, 0% 100%, 0% 100%, 0% 0%);
+          clip-path: polygon(100% 20%, 100% 0%, 100% 80%, 0% 100%, 0% 100%, 0% 0%);
+}
+
+.discover-sec .discover-sec-bg::before {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 0% 100%, 0% 80%, 0% 0%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 0% 100%, 0% 80%, 0% 0%);
+}
+
+.invite-three-people-sec .invite-three-people-sec-bg::before {
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 20%);
+          clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 100%, 0% 20%);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header .container {
+  --bs-navbar-toggler-focus-width: 0rem;
+  max-width: 1400px;
+}
+header .container .container-fluid .navbar-brand {
+  padding: 0;
+  padding-bottom: 0;
+}
+header .container .container-fluid .navbar-brand img {
+  max-width: 40px;
+}
+header .container .container-fluid .navbar-toggler {
+  border: none;
+}
+header .container .container-fluid .navbar-toggler .navbar-toggler-icon {
+  filter: invert(1);
+}
+header .container .container-fluid .navbar-toggler .navbar-toggler:focus {
+  box-shadow: none;
+}
+header .container .container-fluid .offcanvas {
+  background: #0b1c2e;
+  opacity: 0.9;
+}
+header .container .container-fluid .nav-item a:hover {
+  transition: all 0.3s ease;
+}
+
+.offcanvas-header .btn-close {
+  filter: invert(1);
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  opacity: 1;
+}
+.navbar-nav .nav-link.active {
+  color: white;
+}
+.navbar-nav .navbar-nav .nav-link.show {
+  color: #fff;
+}
+
+.discover-sec .discover-sec-bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("./assits/wolf-smock.jpg") no-repeat center center;
+  background-size: cover;
+  height: 900px;
+  content: "";
+  z-index: -1;
+}
+.discover-sec .discover-sec-bg {
+  height: 900px;
+  align-items: end;
+  flex-direction: column;
+}
+.discover-sec .discover-sec-bg .discover-sec-container {
+  max-width: 558px;
+  position: relative;
+}
+.discover-sec .discover-sec-bg .discover-sec-container p:nth-child(1) {
+  font-size: 57px;
+  color: white;
+  position: absolute;
+  top: -55px;
+  right: 102px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.discover-sec .discover-sec-bg .discover-sec-container h1 {
+  font-size: 186px;
+  color: #F13412;
+  font-weight: 900;
+  line-height: 160px;
+  letter-spacing: 8px;
+}
+.discover-sec .discover-sec-bg .discover-sec-container p:nth-child(3) {
+  font-size: 57px;
+  color: white;
+  text-align: end;
+  position: absolute;
+  bottom: -65px;
+  right: 42px;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 3px;
+}
+.discover-sec .discover-sec-bg .discover-sec-container p:nth-child(3) span {
+  font-weight: 600;
+}
+.discover-sec .discover-sec-bg .discover-sec-container .btn {
+  background: transparent linear-gradient(180deg, #F6A91D 0%, #F13412 100%) 0% 0% no-repeat padding-box;
+  width: 255px;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 100px;
+  right: -92px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.who-we-are-sec {
+  position: relative;
+}
+.who-we-are-sec .who-we-are-sec-bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(./assits/one-wolf.jpg) no-repeat center center;
+  background-size: cover;
+  height: 638px;
+  opacity: 0.2;
+  content: "";
+  z-index: -1;
+}
+.who-we-are-sec .who-we-are-sec-bg {
+  width: 100%;
+  height: 638px;
+  position: absolute;
+  top: -128px;
+  gap: 100px;
+}
+.who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-logo {
+  text-align: center;
+}
+.who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-logo img {
+  width: 100px;
+}
+.who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-logo p {
+  font-family: kelson-Sans-dark;
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 0px;
+  font-weight: 900;
+}
+.who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-details h2 {
+  font-size: 43px;
+  color: #F13412;
+  font-weight: 900;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+  text-align: end;
+  width: 800px;
+}
+.who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-details p {
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-size: 19px;
+  width: 800px;
+  line-height: 25px;
+  color: #001B46;
+}
+
+.history-sec {
+  position: relative;
+}
+.history-sec .history-sec-bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(./assits/forest-bg2.jpg) no-repeat center center;
+  background-size: cover;
+  height: 638px;
+  content: "";
+  z-index: -1;
+}
+.history-sec .history-sec-bg {
+  height: 638px;
+  position: relative;
+  top: 382px;
+  gap: 100px;
+}
+.history-sec .history-sec-bg .history-sec-video {
+  width: 600px;
+}
+.history-sec .history-sec-bg .history-sec-video img {
+  width: 100%;
+}
+.history-sec .history-sec-bg div:nth-child(2) {
+  color: white;
+  max-width: 300px;
+}
+.history-sec .history-sec-bg div:nth-child(2) h2 {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.history-sec .history-sec-bg div:nth-child(2) h2 span {
+  font-family: kelson-Sans-dark;
+  font-weight: 900;
+  letter-spacing: 0px;
+}
+.history-sec .history-sec-bg div:nth-child(2) p {
+  font-family: kelson-Sans-light;
+  letter-spacing: 3px;
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.history-sec .history-sec-bg div:nth-child(2) p span {
+  font-family: kelson-Sans-Regular;
+  font-weight: 900;
+}
+
+.services-sec {
+  position: relative;
+}
+.services-sec .services-sec-bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("./assits/digital-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 638px;
+  opacity: 0.4;
+  content: "";
+  z-index: -1;
+}
+.services-sec .services-sec-bg {
+  height: 638px;
+  position: relative;
+  top: 255px;
+  gap: 100px;
+}
+.services-sec .services-sec-bg .services-container {
+  padding-top: 70px;
+  gap: 100px;
+}
+.services-sec .services-sec-bg .services-container .entire-future-container {
+  margin-top: 65px;
+  position: relative;
+}
+.services-sec .services-sec-bg .services-container .entire-future-container img {
+  width: 516px;
+  position: relative;
+}
+.services-sec .services-sec-bg .services-container .entire-future-container p:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 300px;
+  color: #30AEF0;
+  font-weight: 900;
+  font-size: 20px;
+}
+.services-sec .services-sec-bg .services-container .entire-future-container h3:nth-child(3) {
+  font-family: kelson-Sans-dark;
+  position: absolute;
+  top: 27px;
+  right: 240px;
+  font-size: 3rem;
+  color: #F13412;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.services-sec .services-sec-bg .services-container .entire-future-container h3:nth-child(4) {
+  font-family: kelson-Sans-dark;
+  position: absolute;
+  top: 77px;
+  right: 238px;
+  font-size: 3rem;
+  color: #F13412;
+  font-weight: 900;
+  letter-spacing: 0px;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container {
+  position: relative;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(1) span:nth-child(1) {
+  font-family: kelson-Sans-dark;
+  font-weight: 900;
+  letter-spacing: 0px;
+  font-size: 43px;
+  font-weight: 900;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(1) span:nth-child(2) {
+  font-family: kelson-Sans-dark;
+  font-weight: 900;
+  letter-spacing: 0px;
+  font-size: 43px;
+  opacity: 0.8;
+  font-weight: 900;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(2) {
+  opacity: 0.8;
+  word-spacing: 2px;
+  font-size: 19px;
+  line-height: 25px;
+  margin: 0;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(2) span {
+  opacity: 1;
+  font-weight: 900;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(3) {
+  opacity: 0.8;
+  word-spacing: 2px;
+  font-size: 19px;
+  line-height: 25px;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(4) {
+  opacity: 0.8;
+  word-spacing: 2px;
+  font-size: 19px;
+  line-height: 25px;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(4) span {
+  font-weight: 900;
+  opacity: 1;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(5) {
+  margin: 0;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(5) span {
+  opacity: 1;
+  word-spacing: 2px;
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 900;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(6) span {
+  opacity: 1;
+  word-spacing: 2px;
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 900;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(7) {
+  opacity: 0.8;
+  word-spacing: 2px;
+  font-size: 45px;
+  line-height: 25px;
+  position: absolute;
+  color: #30AEF0;
+  left: 286px;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(7) span {
+  font-size: 35px;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(8) {
+  opacity: 0.8;
+  word-spacing: 2px;
+  font-size: 89px;
+  line-height: 25px;
+  position: absolute;
+  color: #248DEC;
+  left: 121px;
+  bottom: -90px;
+}
+.services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(8) span {
+  font-size: 70px;
+  line-height: 10px;
+}
+
+.alpha-millionaire-sec {
+  position: relative;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("./assits/trees-bg.png") no-repeat center center;
+  background-size: cover;
+  height: 638px;
+  content: "";
+  z-index: -1;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg {
+  position: relative;
+  height: 638px;
+  top: 128px;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg div {
+  justify-content: space-between;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) {
+  flex-direction: column;
+  color: white;
+  align-items: start;
+  padding-top: 124px;
+  margin-left: 90px;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(1) {
+  font-family: kelson-Sans-light;
+  font-weight: 100;
+  font-size: 23px;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(2) {
+  font-family: kelson-Sans-light;
+  font-weight: 100;
+  font-size: 23px;
+  letter-spacing: 3px;
+  line-height: 40px;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(3) {
+  font-family: kelson-Sans-light;
+  font-weight: 100;
+  font-size: 43px;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  max-width: 700px;
+  line-height: 52px;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(3) span {
+  font-family: kelson-Sans-Regular;
+  font-weight: 800;
+  font-size: 52px;
+  font-weight: 900;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(4) {
+  font-size: 86px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #F47A17;
+  margin-left: 200px;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(5) {
+  font-family: kelson-Sans-light;
+  font-weight: 100;
+  font-size: 23px;
+  letter-spacing: 3px;
+}
+.alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(2) {
+  visibility: hidden;
+}
+
+.invite-teach-sec {
+  position: relative;
+}
+.invite-teach-sec .invite-teach-sec-bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("./assits/two-wolf.jpg") no-repeat center center;
+  background-size: cover;
+  height: 638px;
+  opacity: 0.2;
+  content: "";
+  z-index: -1;
+}
+.invite-teach-sec .invite-teach-sec-bg {
+  position: relative;
+  height: 638px;
+  top: 0px;
+}
+.invite-teach-sec .invite-teach-sec-bg div {
+  max-width: 700px;
+  color: #001B46;
+  margin: auto;
+  padding-top: 139px;
+  position: relative;
+}
+.invite-teach-sec .invite-teach-sec-bg div p {
+  font-family: kelson-Sans-light;
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: 2px;
+  line-height: 31px;
+  margin: 0;
+  margin-bottom: 13px;
+  word-spacing: 3px;
+}
+.invite-teach-sec .invite-teach-sec-bg div p:nth-child(2) {
+  font-family: kelson-Sans-dark;
+  font-weight: 900;
+}
+.invite-teach-sec .invite-teach-sec-bg div p:nth-child(3) span {
+  font-family: kelson-Sans-dark;
+  font-weight: 900;
+}
+.invite-teach-sec .invite-teach-sec-bg div h2 {
+  font-size: 77px;
+  color: #30AEF0;
+  margin-left: 50px;
+  font-weight: 900;
+}
+.invite-teach-sec .invite-teach-sec-bg div p:nth-child(5) {
+  font-family: kelson-Sans-dark;
+  font-size: 59px;
+  color: #248DEC;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  right: -286px;
+  top: -28px;
+  font-weight: 800;
+  z-index: -1;
+}
+.invite-teach-sec .invite-teach-sec-bg div p:nth-child(6) span {
+  font-weight: 900;
+}
+
+.invite-three-people-sec {
+  position: relative;
+}
+.invite-three-people-sec .invite-three-people-sec-bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("./assits/one3-wolf2.jpg") no-repeat center center;
+  background-size: cover;
+  height: 638px;
+  content: "";
+  z-index: -1;
+}
+.invite-three-people-sec .invite-three-people-sec-bg {
+  position: relative;
+  height: 638px;
+  top: -128px;
+}
+.invite-three-people-sec .invite-three-people-sec-bg div {
+  justify-content: space-between;
+}
+.invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) {
+  max-width: 541px;
+  margin-left: 80px;
+  padding-top: 150px;
+  color: white;
+  display: block;
+}
+.invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) p:nth-child(1) {
+  font-size: 55px;
+  color: #F13412;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+.invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) p:nth-child(2), .invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) p:nth-child(3) {
+  font-size: 23px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-align: end;
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+.invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) p:nth-child(3) {
+  margin-bottom: 30px;
+}
+.invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) h3 {
+  font-size: 37px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-align: end;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) .btn {
+  width: 190px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-align: center;
+  background: transparent linear-gradient(180deg, #30AEF0 0%, #248DEC 100%) 0% 0% no-repeat padding-box;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin-left: 104px;
+}
+.invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) p:nth-child(6) {
+  font-family: kelson-Sans-light;
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  text-align: center;
+}
+.invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(2) {
+  visibility: hidden;
+}
+
+.procedure-sec {
+  position: relative;
+}
+.procedure-sec .procedure-sec-bg::before {
+  position: absolute;
+  background: url("./assits/digital-bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 638px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.4;
+  content: "";
+  z-index: -1;
+}
+.procedure-sec .procedure-sec-bg {
+  height: 638px;
+  position: relative;
+  top: -128px;
+}
+.procedure-sec .procedure-sec-bg div div h3 {
+  font-size: 52px;
+  font-weight: 500;
+  padding-top: 30px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  color: #001B46;
+  padding-left: 130px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container {
+  position: relative;
+  display: grid;
+  grid-template-areas: "cloud mobile digital-cube paper people";
+  max-width: 1476px;
+  margin: auto;
+  margin-top: 50px;
+}
+@keyframes display {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(1) {
+  grid-area: "cloud";
+  transition: all 1.5s ease;
+  position: relative;
+  right: -62px;
+  top: 26px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(1) .cloud-img {
+  margin-left: 60px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(1) p {
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 4px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) {
+  grid-area: "mobile";
+  transition: all 1.5s ease;
+  position: relative;
+  top: 160px;
+  right: 38px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) .right-arrow {
+  display: none;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) .path {
+  position: relative;
+  transform: rotate(5deg);
+  top: -134px;
+  right: -38px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) .single-arrow {
+  width: 20px;
+  position: relative;
+  left: 22px;
+  top: -87px;
+  transform: rotate(-43deg);
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) p {
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 4px;
+  text-align: end;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) {
+  grid-area: "digital-cube";
+  transition: all 1.5s ease;
+  position: relative;
+  right: 22px;
+  top: 26px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) .right-arrow {
+  display: none;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) .path {
+  position: relative;
+  top: 196px;
+  right: 28px;
+  transform: rotateX(200deg);
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) .single-arrow {
+  width: 20px;
+  position: relative;
+  left: -40px;
+  top: 153px;
+  transform: rotate(-70deg);
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) .digital-cube-img {
+  position: relative;
+  right: 65px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) p {
+  font-size: 25px;
+  font-weight: 800;
+  max-width: 253px;
+  margin: auto;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 4px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) {
+  grid-area: "paper";
+  transition: all 1.5s ease;
+  position: relative;
+  top: 160px;
+  right: 137px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) .right-arrow {
+  display: none;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) .path {
+  position: relative;
+  transform: rotate(5deg);
+  top: -134px;
+  right: -38px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) .single-arrow {
+  width: 20px;
+  position: relative;
+  left: 22px;
+  top: -87px;
+  transform: rotate(-43deg);
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) p {
+  font-size: 25px;
+  font-weight: 800;
+  max-width: 200px;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 4px;
+  position: relative;
+  right: -95px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) {
+  grid-area: "people";
+  transition: all 1.5s ease;
+  position: relative;
+  right: 95px;
+  top: 46px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) .right-arrow {
+  display: none;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) .path {
+  position: relative;
+  top: 196px;
+  right: 28px;
+  transform: rotateX(200deg);
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) .single-arrow {
+  width: 20px;
+  position: relative;
+  left: -40px;
+  top: 153px;
+  transform: rotate(-70deg);
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) .people-img {
+  position: relative;
+  right: 65px;
+}
+.procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) p {
+  font-size: 25px;
+  font-weight: 800;
+  max-width: 285px;
+  margin: auto;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.about-sec {
+  position: relative;
+}
+.about-sec .about-sec-bg::before {
+  position: absolute;
+  background: url("./assits/one-wolf2.jpg") no-repeat center center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+}
+.about-sec .about-sec-bg {
+  min-height: 638px;
+  position: relative;
+  top: -128px;
+  color: white;
+}
+.about-sec .about-sec-bg .about-sec-features {
+  padding-top: 38px;
+}
+.about-sec .about-sec-bg .about-sec-features div {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.about-sec .about-sec-bg .about-sec-features div h3 {
+  font-size: 52px;
+  font-weight: 900;
+  max-width: 952px;
+  text-align: start;
+  margin-bottom: 40px;
+  font-family: kelson-Sans-dark;
+  font-weight: 900;
+  letter-spacing: 0px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container {
+  display: grid;
+  grid-template-areas: "earth earth earth" "handshake tronwolf rocket" "moneybag moneybag coin";
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1) {
+  grid-area: earth;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  min-height: 250px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1) img {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1) p {
+  transition: all 0.5s ease;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  max-width: 300px;
+  letter-spacing: 2px;
+  text-align: center;
+  z-index: 1;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1):hover img {
+  top: -100;
+  width: 200px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1):hover p {
+  max-width: 300px;
+  letter-spacing: 2px;
+  top: 0px;
+  opacity: 1;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(2) {
+  grid-area: rocket;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  min-height: 250px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(2) img {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(2) p {
+  transition: all 0.5s ease;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  max-width: 300px;
+  letter-spacing: 2px;
+  text-align: center;
+  z-index: 1;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(2):hover img {
+  top: -100;
+  width: 200px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(2):hover p {
+  max-width: 300px;
+  letter-spacing: 2px;
+  top: 0px;
+  opacity: 1;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3) {
+  grid-area: tronwolf;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  height: 250px;
+  width: 250px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3) img {
+  width: 125px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3) p {
+  transition: all 0.5s ease;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  margin: auto;
+  margin-top: 30px;
+  font-family: kelson-Sans-dark;
+  font-weight: 900;
+  letter-spacing: 0px;
+  font-size: 43px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3):hover img {
+  top: -100;
+  width: 150px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3):hover p {
+  letter-spacing: 2px;
+  top: 0px;
+  opacity: 1;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4) {
+  grid-area: coin;
+  left: -83px;
+  top: 23px;
+  position: relative;
+  min-height: 250px;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4) img {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4) p {
+  transition: all 0.5s ease;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  max-width: 300px;
+  letter-spacing: 2px;
+  text-align: center;
+  z-index: 1;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4):hover img {
+  top: -100;
+  width: 200px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4):hover p {
+  max-width: 300px;
+  letter-spacing: 2px;
+  top: 0px;
+  opacity: 1;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5) {
+  grid-area: moneybag;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  min-height: 250px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5) img {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5) p {
+  transition: all 0.5s ease;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  max-width: 300px;
+  letter-spacing: 2px;
+  text-align: center;
+  z-index: 1;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5):hover img {
+  top: -100;
+  width: 200px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5):hover p {
+  max-width: 300px;
+  letter-spacing: 2px;
+  top: 0px;
+  opacity: 1;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(6) {
+  grid-area: handshake;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  min-height: 250px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(6) img {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(6) p {
+  transition: all 0.5s ease;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  max-width: 300px;
+  letter-spacing: 2px;
+  text-align: center;
+  z-index: 1;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(6):hover img {
+  top: -100;
+  width: 200px;
+}
+.about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(6):hover p {
+  max-width: 300px;
+  letter-spacing: 2px;
+  top: 0px;
+  opacity: 1;
+}
+.about-sec .about-sec-bg .about-sec-contact {
+  max-width: 1035px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0px 20px;
+  padding-bottom: 67px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one div:nth-child(1) h2 {
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .about-text-container {
+  border-left: 2px solid white;
+  max-width: 640px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .about-text-container .about-details {
+  padding: 0 20px;
+  margin-top: 42px;
+  margin-bottom: 27px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .about-text-container .about-details p:nth-child(1) {
+  color: #F13412;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .about-text-container .about-details p:nth-child(2) {
+  font-size: 20px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container {
+  display: flex;
+  justify-content: space-between;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(1) {
+  text-align: center;
+  padding: 0 20px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(1) img {
+  max-width: 23px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(1) p:nth-child(2) {
+  font-size: 25px;
+  font-weight: 900;
+  color: #30AEF0;
+  margin-bottom: 0;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(1) p:nth-child(3) {
+  font-size: 20px;
+  font-weight: 800px;
+  letter-spacing: 2px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(2) {
+  text-align: center;
+  border-left: 2px solid white;
+  padding: 0 20px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(2) img {
+  max-width: 23px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(2) p:nth-child(2) {
+  font-size: 25px;
+  font-weight: 900;
+  color: #30AEF0;
+  margin-bottom: 0;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(2) p:nth-child(3) {
+  font-size: 20px;
+  font-weight: 800px;
+  letter-spacing: 2px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(3) {
+  text-align: center;
+  border-left: 2px solid white;
+  padding: 0 20px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(3) img {
+  max-width: 23px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(3) p:nth-child(2) {
+  font-size: 25px;
+  font-weight: 900;
+  color: #30AEF0;
+  margin-bottom: 0;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(3) p:nth-child(3) {
+  font-size: 20px;
+  font-weight: 800px;
+  letter-spacing: 2px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(4) {
+  text-align: center;
+  border-left: 2px solid white;
+  padding: 0 20px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(4) img {
+  max-width: 23px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(4) p:nth-child(2) {
+  font-size: 25px;
+  font-weight: 900;
+  color: #30AEF0;
+  margin-bottom: 0;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(4) p:nth-child(3) {
+  font-size: 20px;
+  font-weight: 800px;
+  letter-spacing: 2px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-two {
+  margin-top: 100px;
+  text-align: center;
+  max-width: 300px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-two h3 {
+  font-size: 51px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-two p:nth-child(2) {
+  font-size: 28px;
+  line-height: 60px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-two img {
+  width: 84px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-two p:nth-child(4) {
+  font-size: 21px;
+  line-height: 45px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-two p:nth-child(5) {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.multiple-wolfs-sec {
+  position: relative;
+}
+.multiple-wolfs-sec .multiple-wolfs-sec-bg {
+  position: absolute;
+  background: url("./assits/multiple-wolfs-bg.png") no-repeat center center;
+  background-size: cover;
+  height: 638px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+}
+.multiple-wolfs-sec .multiple-wolfs-sec-bg {
+  height: 638px;
+  position: relative;
+  top: -128px;
+}
+.multiple-wolfs-sec .multiple-wolfs-sec-bg div {
+  max-width: 1078px;
+  margin: auto;
+  padding-top: 40px;
+}
+.multiple-wolfs-sec .multiple-wolfs-sec-bg div h2 {
+  text-align: center;
+  font-size: 43px;
+  letter-spacing: 5px;
+  color: white;
+}
+.multiple-wolfs-sec .multiple-wolfs-sec-bg div h2 span {
+  font-size: 51px;
+  font-weight: 900;
+}
+
+.join-us-sec {
+  position: relative;
+}
+.join-us-sec .join-us-sec-bg::before {
+  position: absolute;
+  background: url("./assits/wolf-moon2.jpg") no-repeat center center;
+  background-size: cover;
+  height: 638px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+}
+.join-us-sec .join-us-sec-bg {
+  height: 638px;
+  position: absolute;
+  width: 100%;
+  top: -128px;
+}
+.join-us-sec .join-us-sec-bg div {
+  justify-content: space-between;
+}
+.join-us-sec .join-us-sec-bg div .join-us-container {
+  max-width: 300px;
+  text-align: center;
+  display: grid;
+  gap: 90px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.join-us-sec .join-us-sec-bg div .join-us-container .logo-container {
+  align-items: end;
+  gap: 15px;
+}
+.join-us-sec .join-us-sec-bg div .join-us-container .logo-container img {
+  width: 70px;
+}
+.join-us-sec .join-us-sec-bg div .join-us-container .logo-container p {
+  font-size: 23px;
+  font-weight: 900;
+  color: white;
+  font-family: kelson-Sans-dark;
+  font-weight: 900;
+  letter-spacing: 0px;
+}
+.join-us-sec .join-us-sec-bg div .join-us-container .join-us-details p {
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 800;
+  word-spacing: 2px;
+}
+.join-us-sec .join-us-sec-bg div .join-us-container .join-us-btn {
+  width: 90%;
+}
+.join-us-sec .join-us-sec-bg div .join-us-container .join-us-btn .btn {
+  width: 100%;
+  background: transparent linear-gradient(180deg, #F6A91D 0%, #F13412 100%) 0% 0% no-repeat padding-box;
+  color: white;
+  width: 100%;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.join-us-sec .join-us-sec-bg div .none {
+  visibility: hidden;
+}
+
+@media (max-width: 1400px) {
+  .procedure-sec .procedure-sec-bg::before {
+    height: 100%;
+  }
+  .procedure-sec .procedure-sec-bg {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .procedure-sec .procedure-sec-bg div div h3 {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container {
+    padding-bottom: 40px;
+    grid-template-areas: "cloud" "mobile" "digital-cube" "paper" "people";
+    gap: 100px;
+    place-content: center;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(1) {
+    text-align: center;
+    right: 0px;
+    top: 0px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(1) .cloud-img {
+    margin: 0;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) {
+    text-align: center;
+    place-self: center;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) .right-arrow {
+    display: block;
+    position: relative;
+    width: 100px;
+    transform: rotate(90deg);
+    top: -59px;
+    right: -37px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) .path {
+    display: none;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) .single-arrow {
+    display: none;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) {
+    place-self: center;
+    text-align: center;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) .right-arrow {
+    display: block;
+    position: relative;
+    width: 100px;
+    transform: rotate(90deg);
+    top: -59px;
+    right: -75px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) .path {
+    display: none;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) .single-arrow {
+    display: none;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) .digital-cube-img {
+    right: 0px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) {
+    text-align: center;
+    place-self: center;
+    grid-area: "paper";
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) .right-arrow {
+    display: block;
+    position: relative;
+    width: 100px;
+    transform: rotate(90deg);
+    top: -59px;
+    right: -49px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) .path {
+    display: none;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) .single-arrow {
+    display: none;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) P {
+    right: 0px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) {
+    place-self: center;
+    text-align: center;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) .right-arrow {
+    display: block;
+    position: relative;
+    width: 100px;
+    transform: rotate(90deg);
+    top: -59px;
+    right: -92px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) .path {
+    display: none;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) .single-arrow {
+    display: none;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) .people-img {
+    right: 0;
+  }
+}
+@media (max-width: 1350px) {
+  .who-we-are-sec .who-we-are-sec-bg {
+    gap: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-details h2 {
+    width: 600px;
+  }
+  .who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-details p {
+    width: 600px;
+    color: #001B46;
+  }
+}
+@media (max-width: 1000px) {
+  .discover-sec .discover-sec-bg .discover-sec-container p:nth-child(1) {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: -39px;
+    right: 128px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container h1 {
+    font-size: 125px;
+    color: #F13412;
+    font-weight: 900;
+    line-height: 119px;
+    letter-spacing: 6px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container p:nth-child(3) {
+    font-size: 50px;
+    color: white;
+    text-align: end;
+    position: absolute;
+    bottom: -46px;
+    right: 116px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 2px;
+  }
+  .who-we-are-sec .who-we-are-sec-bg::before {
+    height: 850px;
+    -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 85%, 0% 100%, 0% 15%);
+            clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 85%, 0% 100%, 0% 15%);
+  }
+  .who-we-are-sec .who-we-are-sec-bg {
+    flex-direction: column;
+    gap: 40px;
+    height: 850px;
+  }
+  .who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-details h2 {
+    width: 90%;
+    margin: auto;
+  }
+  .who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-details p {
+    letter-spacing: 3px;
+    font-size: 19px;
+    width: 90%;
+    margin: auto;
+    line-height: 25px;
+    color: #001B46;
+  }
+  .history-sec .history-sec-bg {
+    top: 595px;
+  }
+  .services-sec .services-sec-bg::before {
+    height: 1100px;
+    -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 89%, 0% 100%, 0% 100%, 0% 11%);
+            clip-path: polygon(100% 0%, 100% 0%, 100% 89%, 0% 100%, 0% 100%, 0% 11%);
+  }
+  .services-sec .services-sec-bg {
+    height: 1050px;
+    top: 471px;
+  }
+  .services-sec .services-sec-bg .services-container {
+    flex-direction: column;
+    padding-top: 70px;
+    gap: 40px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg {
+    top: 400px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg {
+    top: 273px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div {
+    padding-top: 130px;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg {
+    top: 146px;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg div {
+    padding-top: 70px;
+  }
+  .procedure-sec .procedure-sec-bg {
+    top: 144px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .procedure-sec .procedure-sec-bg div div h3 {
+    padding-left: 0px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .multiple-wolfs-sec .multiple-wolfs-sec-bg {
+    top: 149px;
+  }
+  .about-sec .about-sec-bg {
+    top: 149px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3) p {
+    margin-top: 20px;
+  }
+  .join-us-sec .join-us-sec-bg {
+    top: 146px;
+  }
+}
+@media (max-width: 920px) {
+  .history-sec .history-sec-bg {
+    gap: 40px;
+  }
+  .history-sec .history-sec-bg .history-sec-video {
+    width: 500px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) {
+    padding-top: 135px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(1) {
+    font-size: 23px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(3) {
+    font-size: 39px;
+    max-width: 700px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(4) {
+    font-size: 70px;
+    letter-spacing: 2px;
+    margin-left: 185px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div {
+    padding-top: 160px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div h2 {
+    font-size: 70px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div p {
+    line-height: 26px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div p:nth-child(5) {
+    font-size: 55px;
+  }
+  .about-sec .about-sec-bg .about-sec-features div h3 {
+    font-size: 52px;
+    text-align: center;
+  }
+  .about-sec .about-sec-bg .about-sec-contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .multiple-wolfs-sec .multiple-wolfs-sec-bg div h2 {
+    font-size: 40px;
+  }
+  .multiple-wolfs-sec .multiple-wolfs-sec-bg div h2 span {
+    font-size: 45px;
+  }
+  .join-us-sec .join-us-sec-bg div .join-us-container {
+    gap: 58px;
+    margin-top: 148px;
+  }
+}
+@media (max-width: 870px) {
+  .discover-sec .discover-sec-bg .discover-sec-container {
+    max-width: 418px;
+    position: relative;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container p:nth-child(1) {
+    font-size: 45px;
+    top: -34px;
+    right: 30px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container h1 {
+    font-size: 111px;
+    line-height: 100px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container p:nth-child(3) {
+    font-size: 45px;
+    bottom: -35px;
+    right: 18px;
+    line-height: 46px;
+  }
+  .history-sec .history-sec-bg::before {
+    height: 938px;
+    -webkit-clip-path: polygon(100% 13%, 100% 0%, 100% 87%, 0% 100%, 0% 100%, 0% 0%);
+            clip-path: polygon(100% 13%, 100% 0%, 100% 87%, 0% 100%, 0% 100%, 0% 0%);
+  }
+  .history-sec .history-sec-bg {
+    gap: 40px;
+    height: 938px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .history-sec .history-sec-bg .history-sec-video {
+    width: 500px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(3) {
+    font-size: 35px;
+    max-width: 700px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(3) span {
+    font-size: 40px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(4) {
+    font-size: 60px;
+    letter-spacing: 1px;
+    margin-left: 141px;
+  }
+  .multiple-wolfs-sec .multiple-wolfs-sec-bg div h2 {
+    font-size: 30px;
+  }
+  .multiple-wolfs-sec .multiple-wolfs-sec-bg div h2 span {
+    font-size: 35px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container {
+    grid-template-areas: "tronwolf tronwolf" "earth handshake" "rocket moneybag" "coin coin";
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1) .earth-img {
+    top: 0;
+    width: 250px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1) .earth-para {
+    top: 0;
+    opacity: 1;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(2) .rocket-img {
+    top: 0;
+    width: 250px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(2) .rocket-para {
+    top: 0;
+    opacity: 1;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3) .logo-img {
+    top: 0;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3) .logo-para {
+    top: 0;
+    opacity: 1;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4) {
+    left: 0;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4) .coin-img {
+    top: 0;
+    width: 250px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4) .coin-para {
+    top: 0;
+    opacity: 1;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5) {
+    grid-area: moneybag;
+    left: 0px;
+    top: 0px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5) .moneybag-img {
+    top: 0;
+    width: 250px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5) .moneybag-para {
+    top: 0;
+    opacity: 1;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(6) .handshake-img {
+    top: 0;
+    width: 250px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(6) .handshake-para {
+    top: 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 800px) {
+  .who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-details p {
+    letter-spacing: 1px;
+    font-size: 18px;
+    width: 90%;
+    line-height: 23px;
+  }
+  .history-sec .history-sec-bg div:nth-child(2) {
+    max-width: 490px;
+  }
+}
+@media (max-width: 750px) {
+  .invite-teach-sec .invite-teach-sec-bg div:nth-child(1) {
+    width: 90%;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div:nth-child(1) p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    word-spacing: 2px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div:nth-child(1) h2 {
+    font-size: 55px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div:nth-child(1) p:nth-child(5) {
+    font-size: 40px;
+    right: -219px;
+    top: -25px;
+  }
+}
+@media (max-width: 700px) {
+  .discover-sec .discover-sec-bg .discover-sec-container {
+    max-width: 345px;
+    position: relative;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container p:nth-child(1) {
+    font-size: 35px;
+    top: -30px;
+    right: 30px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container h1 {
+    font-size: 85px;
+    line-height: 76px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container p:nth-child(3) {
+    font-size: 35px;
+    bottom: -20px;
+    right: 19px;
+    line-height: 34px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container .btn {
+    right: -57px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) {
+    padding-top: 184px;
+    margin-left: 32px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(1) {
+    font-size: 20px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(2) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(3) {
+    font-size: 23px;
+    max-width: 700px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(3) span {
+    font-size: 27px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(4) {
+    margin-left: 105px;
+    font-size: 45px;
+    letter-spacing: 2px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(5) {
+    font-size: 21px;
+  }
+  .multiple-wolfs-sec .multiple-wolfs-sec-bg div h2 {
+    font-size: 25px;
+  }
+  .multiple-wolfs-sec .multiple-wolfs-sec-bg div h2 span {
+    font-size: 30px;
+  }
+  .about-sec .about-sec-bg .about-sec-features div h3 {
+    font-size: 40px;
+  }
+  .procedure-sec .procedure-sec-bg div div h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 630px) {
+  .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(2), .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(3), .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container div:nth-child(4) {
+    border-top: 2px solid white;
+    padding: 20px;
+    border-left: none;
+    width: 250px;
+    margin: auto;
+  }
+}
+@media (max-width: 600px) {
+  .about-sec .about-sec-bg .about-sec-features div h3 {
+    font-size: 25px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container {
+    grid-template-areas: "tronwolf" "earth" "handshake" "rocket" "moneybag" "coin";
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1) {
+    min-height: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1) img {
+    width: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1) img:hover {
+    width: 230px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(2) {
+    min-height: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(2) img {
+    width: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(2) img:hover {
+    width: 230px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3) {
+    min-height: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3) img {
+    width: 100px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4) {
+    min-height: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4) img {
+    width: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(4) img:hover {
+    width: 230px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5) {
+    min-height: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5) img {
+    width: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(5) img:hover {
+    width: 230px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(6) {
+    min-height: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(6) img {
+    width: 200px;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(6) img:hover {
+    width: 230px;
+  }
+}
+@media (max-width: 550px) {
+  .history-sec .history-sec-bg .history-sec-video {
+    width: 90%;
+  }
+  .history-sec .history-sec-bg div:nth-child(2) {
+    max-width: 90%;
+  }
+  .history-sec .history-sec-bg div:nth-child(2) div:nth-child(2) h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+  .history-sec .history-sec-bg div:nth-child(2) div:nth-child(2) p {
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .services-sec .services-sec-bg .services-container .entire-future-container img {
+    width: 359px;
+  }
+  .services-sec .services-sec-bg .services-container .entire-future-container p:nth-child(2) {
+    right: 227px;
+  }
+  .services-sec .services-sec-bg .services-container .entire-future-container h3:nth-child(3) {
+    right: 153px;
+  }
+  .services-sec .services-sec-bg .services-container .entire-future-container h3:nth-child(4) {
+    right: 148px;
+  }
+  .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .about-text-container {
+    border-left: none;
+  }
+}
+@media (max-width: 525px) {
+  .services-sec .services-sec-bg::before {
+    -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 86%, 0% 100%, 0% 100%, 0% 14%);
+            clip-path: polygon(100% 0%, 100% 0%, 100% 86%, 0% 100%, 0% 100%, 0% 14%);
+  }
+  .services-sec .services-sec-bg {
+    height: 950px;
+  }
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(7) {
+    word-spacing: 2px;
+    font-size: 40px;
+    line-height: 25px;
+    left: 178px;
+  }
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(8) {
+    word-spacing: -4px;
+    font-size: 60px;
+    line-height: 23px;
+    left: 80px;
+    bottom: -86px;
+  }
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(8) span {
+    font-size: 45px;
+    line-height: 10px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p {
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .who-we-are-sec .who-we-are-sec-bg {
+    gap: 0px;
+  }
+  .who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-logo p {
+    font-size: 35px;
+    letter-spacing: 4px;
+  }
+  .who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-details {
+    margin-bottom: 88px;
+  }
+  .who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-details p {
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .who-we-are-sec .who-we-are-sec-bg .who-we-are-sec-details h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  .history-sec .history-sec-bg div:nth-child(2) {
+    max-width: 90%;
+  }
+  .history-sec .history-sec-bg div:nth-child(2) h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .history-sec .history-sec-bg div:nth-child(2) p {
+    letter-spacing: 2px;
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) {
+    padding-top: 188px;
+    margin-left: 15px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p {
+    margin-bottom: 10px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(3) {
+    line-height: 33px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(4) {
+    margin: auto;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div:nth-child(1) h2 {
+    font-size: 45px;
+    margin-left: 0;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div:nth-child(1) p:nth-child(5) {
+    font-size: 35px;
+    right: -150px;
+    top: -25px;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) {
+    position: relative;
+    left: 24px;
+    margin: auto;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) p:nth-child(1) {
+    font-size: 50px;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) p:nth-child(2) {
+    font-size: 20px;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) h3 {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  .procedure-sec .procedure-sec-bg div div h3 {
+    font-size: 35px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container {
+    gap: 68px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(1) .cloud-img {
+    width: 70px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(1) p {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) .mobile-img {
+    width: 70px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) .right-arrow {
+    width: 75px;
+    top: -37px;
+    right: -19px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(2) p {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) .digital-cube-img {
+    width: 70px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) .right-arrow {
+    width: 75px;
+    top: -37px;
+    right: -77px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(3) p {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) .paper-img {
+    width: 70px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) .right-arrow {
+    width: 75px;
+    top: -37px;
+    right: -61px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(4) p {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) .people-img {
+    width: 70px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) .right-arrow {
+    width: 75px;
+    top: -37px;
+    right: -104px;
+  }
+  .procedure-sec .procedure-sec-bg .procedure-sec-container div:nth-child(5) p {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .about-sec .about-sec-bg .about-sec-features div h3 {
+    font-size: 20px;
+  }
+  .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .social-media-container {
+    gap: 0px;
+  }
+  .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one div:nth-child(1) h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .multiple-wolfs-sec .multiple-wolfs-sec-bg div h2 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .multiple-wolfs-sec .multiple-wolfs-sec-bg div h2 span {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  .join-us-sec .join-us-sec-bg div .join-us-container {
+    gap: 58px;
+    margin: auto;
+    margin-top: 148px;
+  }
+}
+@media (max-width: 425px) {
+  .discover-sec .discover-sec-bg::before {
+    height: 600px;
+  }
+  .discover-sec .discover-sec-bg {
+    height: 600px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container {
+    max-width: 259px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container p:nth-child(1) {
+    font-size: 25px;
+    top: -20px;
+    right: 21px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container h1 {
+    font-size: 70px;
+    line-height: 64px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container p:nth-child(3) {
+    font-size: 25px;
+    bottom: 0px;
+    line-height: 23px;
+  }
+  .discover-sec .discover-sec-bg .discover-sec-container .btn {
+    top: 62px;
+    right: -4px;
+    width: 229px;
+  }
+  .who-we-are-sec .who-we-are-sec-bg::before {
+    -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 90%, 0% 100%, 0% 10%);
+            clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 0% 90%, 0% 100%, 0% 10%);
+  }
+  .who-we-are-sec .who-we-are-sec-bg {
+    top: -85px;
+  }
+  .history-sec .history-sec-bg::before {
+    height: 760px;
+    -webkit-clip-path: polygon(100% 13%, 100% 0%, 100% 84%, 0% 100%, 0% 100%, 0% 0%);
+            clip-path: polygon(100% 13%, 100% 0%, 100% 84%, 0% 100%, 0% 100%, 0% 0%);
+  }
+  .history-sec .history-sec-bg {
+    height: 760px;
+  }
+  .services-sec .services-sec-bg .services-container {
+    width: 90%;
+  }
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(2),
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(3),
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(4),
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(5),
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(6) {
+    letter-spacing: 1px;
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(2) span,
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(3) span,
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(4) span,
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(5) span,
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(6) span {
+    font-size: 18px;
+  }
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(7) {
+    word-spacing: 2px;
+    font-size: 40px;
+    line-height: 25px;
+    left: 161px;
+  }
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(8) {
+    word-spacing: -4px;
+    font-size: 60px;
+    line-height: 23px;
+    left: 80px;
+    bottom: -86px;
+  }
+  .services-sec .services-sec-bg .services-container .tronwolf-service-container p:nth-child(8) span {
+    font-size: 45px;
+    line-height: 10px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(1) {
+    font-size: 16px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(2) {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(3) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(3) span {
+    font-size: 21px;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(4) {
+    font-size: 35px;
+    margin: auto;
+  }
+  .alpha-millionaire-sec .alpha-millionaire-sec-bg div div:nth-child(1) p:nth-child(5) {
+    font-size: 16px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div:nth-child(1) p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    word-spacing: 1px;
+    line-height: 23px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div:nth-child(1) h2 {
+    font-size: 35px;
+  }
+  .invite-teach-sec .invite-teach-sec-bg div:nth-child(1) p:nth-child(5) {
+    font-size: 25px;
+    right: -115px;
+    top: -26px;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) p:nth-child(1) {
+    font-size: 35px;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) p:nth-child(2) {
+    font-size: 16px;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) p:nth-child(3) {
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) h3 {
+    font-size: 22px;
+  }
+  .invite-three-people-sec .invite-three-people-sec-bg div div:nth-child(1) .btn {
+    margin-left: 52px;
+  }
+  .about-sec .about-sec-bg .about-sec-features div h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3) p {
+    margin-top: 20px;
+    font-size: 35px;
+  }
+  .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-one .about-text-container .about-details p:nth-child(2) {
+    font-size: 16px;
+  }
+  .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-two h3 {
+    font-size: 40px;
+    margin: 0;
+  }
+  .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-two p:nth-child(2) {
+    font-size: 23px;
+  }
+  .about-sec .about-sec-bg .about-sec-contact .about-sec-contact-container-two p:nth-child(5) {
+    font-size: 16px;
+  }
+  .join-us-sec .join-us-sec-bg div {
+    justify-content: space-between;
+    position: relative;
+  }
+  .join-us-sec .join-us-sec-bg div .none {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .services-sec .services-sec-bg .services-container .entire-future-container img {
+    width: 310px;
+  }
+  .services-sec .services-sec-bg .services-container .entire-future-container p:nth-child(2) {
+    right: 185px;
+    font-size: 16px;
+  }
+  .services-sec .services-sec-bg .services-container .entire-future-container h3:nth-child(3) {
+    right: 151px;
+    top: 21px;
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+  .services-sec .services-sec-bg .services-container .entire-future-container h3:nth-child(4) {
+    right: 148px;
+    top: 54px;
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+}/*# sourceMappingURL=style.css.map */
