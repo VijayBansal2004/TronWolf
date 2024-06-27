@@ -2328,7 +2328,7 @@ div{
           "rocket"
           "moneybag"
           "coin";
-
+          margin-bottom: 25px;
 
           div:nth-child(1){
             min-height: 200px;
@@ -2894,6 +2894,7 @@ div{
           text-align: center;
         }
         .about-sec-hover-container{
+          margin-bottom: 25px;
           div:nth-child(3){
             p {
               margin-top: 20px;

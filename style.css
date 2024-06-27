@@ -1913,6 +1913,7 @@ header .container .container-fluid .nav-item a:hover {
   }
   .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container {
     grid-template-areas: "tronwolf" "earth" "handshake" "rocket" "moneybag" "coin";
+    margin-bottom: 25px;
   }
   .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(1) {
     min-height: 200px;
@@ -2318,6 +2319,9 @@ header .container .container-fluid .nav-item a:hover {
   .about-sec .about-sec-bg .about-sec-features div h3 {
     font-size: 20px;
     text-align: center;
+  }
+  .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container {
+    margin-bottom: 25px;
   }
   .about-sec .about-sec-bg .about-sec-features .about-sec-hover-container div:nth-child(3) p {
     margin-top: 20px;
